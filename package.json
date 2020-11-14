@@ -4,6 +4,7 @@
   "description": "My User Stylesheets",
   "private": true,
   "devDependencies": {
+    "husky": "^4.3.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
   }
