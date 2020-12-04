@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           Hide ads
+@namespace      https://github.com/munierujp/
+@version        1.0.0
+@description    Hide ads on Inoreader
+@author         Munieru (https://github.com/munierujp/)
+@homepageURL https://github.com/munierujp/userstyles
+@updateURL   https://munierujp.github.io/userstyles/styles/inoreader/hide-ads.user.css
+@supportURL https://github.com/munierujp/userstyles/issues
+==/UserStyle== */
+
+@-moz-document domain("inoreader.com") {
+  .ad_size_leaderboard,
+  .ad_size_wide_skyscraper,
+  .ad_title_centered,
+  .ad_title,
+  .block_article_ad,
+  .leaderboard_ad {
+    display: none;
+  }
+
+  #sinner_container {
+    display: none !important;
+  }
+
+  #reader_pane.reader_pane_sinner {
+    padding-right: 0;
+  }
+}
