@@ -13,8 +13,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.css": "stylelint"
   }
 }
