@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wide thumbnail
 @namespace      https://github.com/munierujp/
-@version        1.0.0
+@version        1.1.0
 @description    Make thumbnail wide on Video Station of DiskStation
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -10,71 +10,84 @@
 ==/UserStyle== */
 
 @-moz-document regexp("^(http|https)://diskstation\\.local(:\\d+)?/\\?((.+=.+)*&)?launchApp=SYNO\\.SDS\\.VideoStation\\.AppInstance(&.+=.+)*$") {
-  /* NOTE: original size is 120x180 */
+  /* thumbnail view: original size is 120x180 */
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster {
-    width: 180px !important;
-    height: calc(120px + 44px) !important;
+    width: 240px !important;
+    height: calc(135px + 44px) !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .thumb,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .thumb {
-    width: 180px !important;
-    height: 120px !important;
+    width: 240px !important;
+    height: 135px !important;
+    background-color: black !important;
+    background-size: contain !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .thumb .center-btn,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .thumb .center-btn {
-    left: calc((180px - 44px) / 2) !important;
+    left: calc((240px - 44px) / 2) !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .select-mark,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .select-mark {
-    width: 180px !important;
-    height: 120px !important;
+    width: 240px !important;
+    height: 135px !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .border,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .border {
-    width: calc(180px - 2px) !important;
-    height: calc(120px - 2px) !important;
+    width: calc(240px - 2px) !important;
+    height: calc(135px - 2px) !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape.x-view-over .border,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster.x-view-over .border {
-    width: calc(180px - 4px) !important;
-    height: calc(120px - 4px) !important;
+    width: calc(240px - 4px) !important;
+    height: calc(135px - 4px) !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .title,
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .description,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .title,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .description {
-    width: calc(180px - 8px) !important;
+    width: calc(240px - 8px) !important;
   }
 
+  .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .watch-status-wrap,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .watch-status-wrap {
-    top: calc(120px - 3px) !important;
+    top: calc(135px - 3px) !important;
   }
 
-  /* NOTE: original size is 270x388 */
+  /* detail: original size is 270x388 */
   .syno-vs2-win .view-detail-outer .view-detail .action-area {
-    width: 388px !important;
+    width: 640px !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .x-panel-body {
-    width: 388px !important;
-    height: calc(270px + 52px) !important;
+    width: 640px !important;
+    height: calc(360px + 52px) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image {
-    width: 388px !important;
-    height: 270px !important;
+    width: 640px !important;
+    height: 360px !important;
+    background-color: black !important;
+    background-size: contain !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .x-btn.syno-ux-button.play {
-    top: calc((270px - 76px) / 2) !important;
-    left: calc((388px - 76px) / 2) !important;
+    top: calc((360px - 76px) / 2) !important;
+    left: calc((640px - 76px) / 2) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .border {
-    width: calc(388px - 2px) !important;
-    height: calc(270px - 2px) !important;
+    width: calc(640px - 2px) !important;
+    height: calc(360px - 2px) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .watch-status-wrap {
-    top: calc(270px - 3px) !important;
+    top: calc(360px - 3px) !important;
   }
 }
