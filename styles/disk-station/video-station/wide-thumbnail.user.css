@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wide thumbnail
 @namespace      https://github.com/munierujp/
-@version        1.1.0
+@version        1.2.0
 @description    Make thumbnail wide on Video Station of DiskStation
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -10,84 +10,90 @@
 ==/UserStyle== */
 
 @-moz-document regexp("^(http|https)://diskstation\\.local(:\\d+)?/\\?((.+=.+)*&)?launchApp=SYNO\\.SDS\\.VideoStation\\.AppInstance(&.+=.+)*$") {
-  /* thumbnail view: original size is 120x180 */
+  :root {
+    --background-color: #000;
+    --thumbnail-view-width: 240px;
+    --thumbnail-view-height: 135px;
+    --detail-view-width: 640px;
+    --detail-view-height: 360px;
+  }
+
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster {
-    width: 240px !important;
-    height: calc(135px + 44px) !important;
+    width: var(--thumbnail-view-width) !important;
+    height: calc(var(--thumbnail-view-height) + 44px) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .thumb,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .thumb {
-    width: 240px !important;
-    height: 135px !important;
-    background-color: black !important;
+    width: var(--thumbnail-view-width) !important;
+    height: var(--thumbnail-view-height) !important;
+    background-color: var(--background-color) !important;
     background-size: contain !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .thumb .center-btn,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .thumb .center-btn {
-    left: calc((240px - 44px) / 2) !important;
+    left: calc((var(--thumbnail-view-width) - 44px) / 2) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .select-mark,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .select-mark {
-    width: 240px !important;
-    height: 135px !important;
+    width: var(--thumbnail-view-width) !important;
+    height: var(--thumbnail-view-height) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .border,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .border {
-    width: calc(240px - 2px) !important;
-    height: calc(135px - 2px) !important;
+    width: calc(var(--thumbnail-view-width) - 2px) !important;
+    height: calc(var(--thumbnail-view-height) - 2px) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape.x-view-over .border,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster.x-view-over .border {
-    width: calc(240px - 4px) !important;
-    height: calc(135px - 4px) !important;
+    width: calc(var(--thumbnail-view-width) - 4px) !important;
+    height: calc(var(--thumbnail-view-height) - 4px) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .title,
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .description,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .title,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .description {
-    width: calc(240px - 8px) !important;
+    width: calc(var(--thumbnail-view-width) - 8px) !important;
   }
 
   .syno-vs2-win .thumb-dataview .thumb-wrap.landscape .watch-status-wrap,
   .syno-vs2-win .thumb-dataview .thumb-wrap.poster .watch-status-wrap {
-    top: calc(135px - 3px) !important;
+    top: calc(var(--thumbnail-view-height) - 3px) !important;
   }
 
-  /* detail: original size is 270x388 */
   .syno-vs2-win .view-detail-outer .view-detail .action-area {
-    width: 640px !important;
+    width: var(--detail-view-width) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .x-panel-body {
-    width: 640px !important;
-    height: calc(360px + 52px) !important;
+    width: var(--detail-view-width) !important;
+    height: calc(var(--detail-view-height) + 52px) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image {
-    width: 640px !important;
-    height: 360px !important;
-    background-color: black !important;
+    width: var(--detail-view-width) !important;
+    height: var(--detail-view-height) !important;
+    background-color: var(--background-color) !important;
     background-size: contain !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .x-btn.syno-ux-button.play {
-    top: calc((360px - 76px) / 2) !important;
-    left: calc((640px - 76px) / 2) !important;
+    top: calc((var(--detail-view-height) - 76px) / 2) !important;
+    left: calc((var(--detail-view-width) - 76px) / 2) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .border {
-    width: calc(640px - 2px) !important;
-    height: calc(360px - 2px) !important;
+    width: calc(var(--detail-view-width) - 2px) !important;
+    height: calc(var(--detail-view-height) - 2px) !important;
   }
 
   .syno-vs2-win .view-detail-outer .view-detail .action-area .image .watch-status-wrap {
-    top: calc(360px - 3px) !important;
+    top: calc(var(--detail-view-height) - 3px) !important;
   }
 }
