@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hide ads
 @namespace      https://github.com/munierujp/
-@version        1.0.0
+@version        1.1.0
 @description    Hide ads on Inoreader
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -16,11 +16,15 @@
   .ad_title,
   .block_article_ad,
   .leaderboard_ad {
-    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 
   #sinner_container {
-    display: none !important;
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 
   #reader_pane.reader_pane_sinner {
