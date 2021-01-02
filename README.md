@@ -8,7 +8,3 @@ My User Stylesheets
 
 - [scrollable-dropdown-menu.user.css](https://munierujp.github.io/userstyles/styles/disk-station/video-station/scrollable-dropdown-menu.user.css)
 - [wide-thumbnail.user.css](https://munierujp.github.io/userstyles/styles/disk-station/video-station/wide-thumbnail.user.css)
-
-## Inoreader
-
-- [hide-ads.user.css](https://munierujp.github.io/userstyles/styles/inoreader/hide-ads.user.css)
