@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           リンクの下線を非表示
 @namespace      https://github.com/munierujp/
-@version        1.0.0
+@version        1.1.0
 @description    Yahoo!検索のリンクの下線を非表示にします。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -16,6 +16,11 @@
 
   /* stylelint-disable-next-line selector-class-pattern */
   .sw-Card__title a.sw-Card__titleInner .sw-Card__titleMain {
+    text-decoration: none;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .AnswerVideoUniversal .sw-Card__title .sw-Card__titleList {
     text-decoration: none;
   }
 
