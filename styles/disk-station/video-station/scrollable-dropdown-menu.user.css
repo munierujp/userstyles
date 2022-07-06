@@ -1,8 +1,10 @@
+/* stylelint-disable max-line-length */
+
 /* ==UserStyle==
-@name           Scrollable dropdown menu
+@name           ドロップダウンメニューをスクロール可能化
 @namespace      https://github.com/munierujp/
-@version        1.0.0
-@description    Make dropdown menu scrollable on Video Station of DiskStation
+@version        1.0.1
+@description    DiskStationのVideo Stationのドロップダウンメニューをスクロール可能にします。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
 @updateURL   https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/scrollable-dropdown-menu.user.css
