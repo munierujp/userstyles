@@ -1,8 +1,10 @@
+/* stylelint-disable max-line-length */
+
 /* ==UserStyle==
-@name           Wide thumbnail
+@name           サムネイルを拡大
 @namespace      https://github.com/munierujp/
-@version        1.2.1
-@description    Make thumbnail wide on Video Station of DiskStation
+@version        1.2.2
+@description    DiskStationのVideo Stationのサムネイルを拡大します。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
 @updateURL   https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/wide-thumbnail.user.css
