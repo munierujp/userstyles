@@ -6,7 +6,7 @@ My User Stylesheets
 
 ### Video Station
 
-- [scrollable-dropdown-menu.user.css](https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/scrollable-dropdown-menu.user.css)
+- [ドロップダウンメニューをスクロール可能化](https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/scrollable-dropdown-menu.user.css)
 - [wide-thumbnail.user.css](https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/wide-thumbnail.user.css)
 
 ## Yahoo! JAPAN
