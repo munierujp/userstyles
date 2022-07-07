@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/
-@version        1.0.0
+@version        1.1.0
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -15,31 +15,6 @@
     --link-color-dark: #8ab4f8;
     --visited-link-color: #681da8;
     --visited-link-color-dark: #c58af9;
-  }
-
-  a:link {
-    color: var(--link-color);
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: var(--visited-link-color);
-  }
-
-  html[data-darkreader-scheme="dark"] a:link {
-    color: var(--link-color-dark);
-  }
-
-  html[data-darkreader-scheme="dark"] a:hover {
-    color: var(--link-color-dark);
-  }
-
-  html[data-darkreader-scheme="dark"] a:visited {
-    color: var(--visited-link-color-dark);
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
@@ -59,21 +34,6 @@
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain {
-    color: var(--link-color-dark);
-  }
-
-  /* stylelint-disable-next-line selector-class-pattern */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:hover .sw-Card__titleMain {
-    color: var(--link-color-dark);
-  }
-
-  /* stylelint-disable-next-line selector-class-pattern */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain {
-    color: var(--visited-link-color-dark);
-  }
-
-  /* stylelint-disable-next-line selector-class-pattern */
   .Algo .Algo__osl a:link {
     text-decoration: none;
   }
@@ -86,6 +46,46 @@
   /* stylelint-disable-next-line selector-class-pattern */
   .Algo .Algo__osl a:visited {
     color: var(--visited-link-color);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .Unit .Unit__listItem a:link {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .Unit .Unit__listItem a:hover {
+    text-decoration: underline;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .Unit .Unit__listItem a:visited {
+    color: var(--visited-link-color);
+  }
+
+  .ub-button {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  .ub-button:hover {
+    text-decoration: underline;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain {
+    color: var(--link-color-dark);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:hover .sw-Card__titleMain {
+    color: var(--link-color-dark);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain {
+    color: var(--visited-link-color-dark);
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
@@ -103,13 +103,19 @@
     color: var(--visited-link-color-dark);
   }
 
-  .ub-button {
-    color: var(--link-color);
-    text-decoration: none;
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:link {
+    color: var(--link-color-dark);
   }
 
-  .ub-button:hover {
-    text-decoration: underline;
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:hover {
+    color: var(--link-color-dark);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:visited {
+    color: var(--visited-link-color-dark);
   }
 
   html[data-darkreader-scheme="dark"] .ub-button {
