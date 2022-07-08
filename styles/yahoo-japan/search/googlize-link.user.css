@@ -17,25 +17,11 @@
 
   /* 検索結果のタイトル */
   .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* .Unit .Unit__listItem a:link, */
-  /* 動画のタイトル */
-  a.AnswerVideoUniversal__listItemLink:link .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  .AnswerNews .sw-Card__title .sw-Card__titleList a:link,
-  /* Yahoo!知恵袋のタイトル */
-  .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:link,
-  /* Yahoo!ロコのタイトル */
-  .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:link,
-  /* Yahoo!ロコのアクションボタン */
-  .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:link,
-  /* ヤフオク!のタイトル */
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link,
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  /* PayPayフリマのタイトル */
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link,
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  /* 関連検索 */
+  .Unit .Unit__listItem a:link,
+  /* カルーセル */
+  .sw-Carousel .sw-Carousel__listItemLink a:link,
+  .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
   /* uBlacklistのリンク */
   .ub-button {
     color: #1a0dab;
@@ -46,25 +32,11 @@
 
   /* 検索結果のタイトル */
   .sw-Card__title a.sw-Card__titleInner:hover .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* .Unit .Unit__listItem a:hover, */
-  /* 動画のタイトル */
-  a.AnswerVideoUniversal__listItemLink:hover .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  .AnswerNews .sw-Card__title .sw-Card__titleList a:hover,
-  /* Yahoo!知恵袋のタイトル */
-  .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:hover,
-  /* Yahoo!ロコのタイトル */
-  .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:hover,
-  /* Yahoo!ロコのアクションボタン */
-  .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:hover,
-  /* ヤフオク!のタイトル */
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover,
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
-  /* PayPayフリマのタイトル */
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover,
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
+  /* 関連検索 */
+  .Unit .Unit__listItem a:hover,
+  /* カルーセル */
+  .sw-Carousel .sw-Carousel__listItemLink a:hover,
+  .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
   /* uBlacklistのリンク */
   .ub-button:hover {
     text-decoration: underline;
@@ -74,25 +46,11 @@
 
   /* 検索結果のタイトル */
   .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* .Unit .Unit__listItem a:visited, */
-  /* 動画のタイトル */
-  a.AnswerVideoUniversal__listItemLink:visited .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  .AnswerNews .sw-Card__title .sw-Card__titleList a:visited,
-  /* Yahoo!知恵袋のタイトル */
-  .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:visited,
-  /* Yahoo!ロコのタイトル */
-  .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:visited,
-  /* Yahoo!ロコのアクションボタン */
-  .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:visited,
-  /* ヤフオク!のタイトル */
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
-  /* PayPayフリマのタイトル */
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  /* 関連検索 */
+  .Unit .Unit__listItem a:visited,
+  /* カルーセル */
+  .sw-Carousel .sw-Carousel__listItemLink a:visited,
+  .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #681da8;
   }
 
@@ -100,25 +58,11 @@
 
   /* 検索結果のタイトル */
   html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:link, */
-  /* 動画のタイトル */
-  html[data-darkreader-scheme="dark"] a.AnswerVideoUniversal__listItemLink:link .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerNews .sw-Card__title .sw-Card__titleList a:link,
-  /* Yahoo!知恵袋のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:link,
-  /* Yahoo!ロコのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:link,
-  /* Yahoo!ロコのアクションボタン */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:link,
-  /* ヤフオク!のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link,
-  /* PayPayフリマのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link,
+  /* 関連検索 */
+  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:link,
+  /* カルーセル */
+  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:link,
   /* uBlacklistのリンク */
   html[data-darkreader-scheme="dark"] .ub-button {
     color: #8ab4f8;
@@ -128,25 +72,11 @@
 
   /* 検索結果のタイトル */
   html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:visited, */
-  /* 動画のタイトル */
-  html[data-darkreader-scheme="dark"] a.AnswerVideoUniversal__listItemLink:visited .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerNews .sw-Card__title .sw-Card__titleList a:visited,
-  /* Yahoo!知恵袋のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:visited,
-  /* Yahoo!ロコのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:visited,
-  /* Yahoo!ロコのアクションボタン */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:visited,
-  /* ヤフオク!のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
-  /* PayPayフリマのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  /* 関連検索 */
+  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:visited,
+  /* カルーセル */
+  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:visited,
+  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #c58af9;
   }
 }
