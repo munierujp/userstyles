@@ -33,6 +33,9 @@
   /* ヤフオク!のタイトル */
   .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link,
   .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  /* PayPayフリマのタイトル */
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link,
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
   /* uBlacklistのリンク */
   .ub-button {
     color: #1a0dab;
@@ -59,6 +62,9 @@
   /* ヤフオク!のタイトル */
   .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover,
   .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
+  /* PayPayフリマのタイトル */
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover,
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
   /* uBlacklistのリンク */
   .ub-button:hover {
     text-decoration: underline;
@@ -83,7 +89,10 @@
   .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:visited,
   /* ヤフオク!のタイトル */
   .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
+  /* PayPayフリマのタイトル */
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited,
+  .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #681da8;
   }
 
@@ -107,6 +116,9 @@
   /* ヤフオク!のタイトル */
   html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
   html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:link,
+  /* PayPayフリマのタイトル */
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:link,
   /* uBlacklistのリンク */
   html[data-darkreader-scheme="dark"] .ub-button {
     color: #8ab4f8;
@@ -133,6 +145,9 @@
   /* ヤフオク!のタイトル */
   html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover,
   html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
+  /* PayPayフリマのタイトル */
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover,
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
   /* uBlacklistのリンク */
   html[data-darkreader-scheme="dark"] .ub-button:hover {
     text-decoration: underline;
@@ -157,7 +172,10 @@
   html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:visited,
   /* ヤフオク!のタイトル */
   html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
+  /* PayPayフリマのタイトル */
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited,
+  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #c58af9;
   }
 }
