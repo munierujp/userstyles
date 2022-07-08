@@ -122,35 +122,6 @@
   /* uBlacklistのリンク */
   html[data-darkreader-scheme="dark"] .ub-button {
     color: #8ab4f8;
-    text-decoration: none;
-  }
-
-  /* Dark Readerによるダークモードにおけるホバー時のリンクのスタイル */
-
-  /* 検索結果のタイトル */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:hover .sw-Card__titleMain,
-  /* 関連検索のリンク */
-  /* FIXME: この位置だとstylelintでエラーになる */
-  /* html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:hover, */
-  /* 動画のタイトル */
-  html[data-darkreader-scheme="dark"] a.AnswerVideoUniversal__listItemLink:hover .sw-Card__titleList,
-  /* Yahoo!ニュースのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerNews .sw-Card__title .sw-Card__titleList a:hover,
-  /* Yahoo!知恵袋のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerChiebukuro .sw-Card__title .sw-Card__titleList a:hover,
-  /* Yahoo!ロコのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco a.AnswerGourmetListLoco__listTitle:hover,
-  /* Yahoo!ロコのアクションボタン */
-  html[data-darkreader-scheme="dark"] .AnswerGourmetListLoco .AnswerGourmetListLoco__actionButton .sw-ActionButton__listItem a:hover,
-  /* ヤフオク!のタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover,
-  html[data-darkreader-scheme="dark"] .AnswerAuction .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
-  /* PayPayフリマのタイトル */
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover,
-  html[data-darkreader-scheme="dark"] .AnswerFleaMarket .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
-  /* uBlacklistのリンク */
-  html[data-darkreader-scheme="dark"] .ub-button:hover {
-    text-decoration: underline;
   }
 
   /* Dark Readerによるダークモードにおける訪問済みリンクのスタイル */
