@@ -4,7 +4,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/
-@version        1.2.0
+@version        1.3.0
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -16,54 +16,54 @@
   /* 通常のリンクのスタイル */
 
   /* 検索結果のタイトル */
-  .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain,
+  a.sw-Card__titleInner:link .sw-Card__titleMain,
   /* 関連検索 */
-  .Unit .Unit__listItem a:link,
+  .Unit__listItem a:link,
   /* カルーセル */
-  .sw-Carousel .sw-Carousel__listItemLink a:link,
-  .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  /* uBlacklistのリンク */
+  .sw-Carousel__listItemLink a:link,
+  .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  /* uBlacklistによって追加されるリンク */
   .ub-button {
     color: #1a0dab;
     text-decoration: none;
   }
 
-  /* ホバー時のリンクのスタイル */
-
-  /* 検索結果のタイトル */
-  .sw-Card__title a.sw-Card__titleInner:hover .sw-Card__titleMain,
-  /* 関連検索 */
-  .Unit .Unit__listItem a:hover,
-  /* カルーセル */
-  .sw-Carousel .sw-Carousel__listItemLink a:hover,
-  .sw-Carousel .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
-  /* uBlacklistのリンク */
-  .ub-button:hover {
-    text-decoration: underline;
-  }
-
   /* 訪問済みリンクのスタイル */
 
   /* 検索結果のタイトル */
-  .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain,
+  a.sw-Card__titleInner:visited .sw-Card__titleMain,
   /* 関連検索 */
-  .Unit .Unit__listItem a:visited,
+  .Unit__listItem a:visited,
   /* カルーセル */
-  .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  .sw-Carousel__listItemLink a:visited,
+  .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #681da8;
+  }
+
+  /* ホバー時のリンクのスタイル */
+
+  /* 検索結果のタイトル */
+  a.sw-Card__titleInner:hover .sw-Card__titleMain,
+  /* 関連検索 */
+  .Unit__listItem a:hover,
+  /* カルーセル */
+  .sw-Carousel__listItemLink a:hover,
+  .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
+  /* uBlacklistによって追加されるリンク */
+  .ub-button:hover {
+    text-decoration: underline;
   }
 
   /* Dark Readerによるダークモードにおける通常のリンクのスタイル */
 
   /* 検索結果のタイトル */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:link .sw-Card__titleMain,
+  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:link .sw-Card__titleMain,
   /* 関連検索 */
-  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:link,
+  html[data-darkreader-scheme="dark"] .Unit__listItem a:link,
   /* カルーセル */
-  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:link,
-  /* uBlacklistのリンク */
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link,
+  /* uBlacklistによって追加されるリンク */
   html[data-darkreader-scheme="dark"] .ub-button {
     color: #8ab4f8;
   }
@@ -71,12 +71,12 @@
   /* Dark Readerによるダークモードにおける訪問済みリンクのスタイル */
 
   /* 検索結果のタイトル */
-  html[data-darkreader-scheme="dark"] .sw-Card__title a.sw-Card__titleInner:visited .sw-Card__titleMain,
+  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:visited .sw-Card__titleMain,
   /* 関連検索 */
-  html[data-darkreader-scheme="dark"] .Unit .Unit__listItem a:visited,
+  html[data-darkreader-scheme="dark"] .Unit__listItem a:visited,
   /* カルーセル */
-  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:visited,
-  html[data-darkreader-scheme="dark"] .sw-Carousel .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited,
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
     color: #c58af9;
   }
 }
