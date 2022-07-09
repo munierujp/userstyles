@@ -4,7 +4,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/
-@version        1.3.0
+@version        1.4.0
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -13,70 +13,91 @@
 ==/UserStyle== */
 
 @-moz-document domain("search.yahoo.co.jp") {
-  /* 通常のリンクのスタイル */
+  :root {
+    --link-color: #1a0dab;  /* 通常のリンクの色 */
+    --link-color-dark: #8ab4f8;  /* ダークモードにおける通常のリンクの色 */
+    --visited-link-color: #681da8;  /* 訪問済みリンクの色 */
+    --visited-link-color-dark: #c58af9;  /* ダークモードにおける訪問済みリンクの色 */
+  }
 
-  /* 検索結果のタイトル */
-  a.sw-Card__titleInner:link .sw-Card__titleMain,
-  /* 関連検索 */
-  .Unit__listItem a:link,
-  /* カルーセル */
+  .sw-Card__columnItem a:link,
+  .sw-Card__section a:link,
+  .sw-Card__titleList a:link,
+  .sw-Carousel__listItem a:link,
   .sw-Carousel__listItemLink a:link,
   .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
-  /* uBlacklistによって追加されるリンク */
-  .ub-button {
-    color: #1a0dab;
+  .sw-Link__siteLinksListItem a:link,
+  .Unit__listItem a:link,
+  a.Algo__textListLinks:link,
+  a.AnswerGourmetListLoco__listTitle:link,
+  a.sw-Card__titleInner:link .sw-Card__titleMain {
+    color: var(--link-color);
     text-decoration: none;
   }
 
-  /* 訪問済みリンクのスタイル */
-
-  /* 検索結果のタイトル */
-  a.sw-Card__titleInner:visited .sw-Card__titleMain,
-  /* 関連検索 */
-  .Unit__listItem a:visited,
-  /* カルーセル */
-  .sw-Carousel__listItemLink a:visited,
-  .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
-    color: #681da8;
+  .ub-button {
+    color: var(--link-color);
+    text-decoration: none;
   }
 
-  /* ホバー時のリンクのスタイル */
+  .sw-Card__columnItem a:visited,
+  .sw-Card__section a:visited,
+  .sw-Card__titleList a:visited,
+  .sw-Carousel__listItem a:visited,
+  .sw-Carousel__listItemLink a:visited,
+  .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
+  .sw-Link__siteLinksListItem a:visited,
+  .Unit__listItem a:visited,
+  a.Algo__textListLinks:visited,
+  a.AnswerGourmetListLoco__listTitle:visited,
+  a.sw-Card__titleInner:visited .sw-Card__titleMain {
+    color: var(--visited-link-color);
+  }
 
-  /* 検索結果のタイトル */
-  a.sw-Card__titleInner:hover .sw-Card__titleMain,
-  /* 関連検索 */
-  .Unit__listItem a:hover,
-  /* カルーセル */
+  .sw-Card__columnItem a:hover,
+  .sw-Card__section a:hover,
+  .sw-Card__titleList a:hover,
+  .sw-Carousel__listItem a:hover,
   .sw-Carousel__listItemLink a:hover,
   .sw-Carousel__listItemLink a:hover .sw-Carousel__linkTitle,
-  /* uBlacklistによって追加されるリンク */
+  .sw-Link__siteLinksListItem a:hover,
+  .Unit__listItem a:hover,
+  a.Algo__textListLinks:hover,
+  a.AnswerGourmetListLoco__listTitle:hover,
+  a.sw-Card__titleInner:hover .sw-Card__titleMain,
   .ub-button:hover {
     text-decoration: underline;
   }
 
-  /* Dark Readerによるダークモードにおける通常のリンクのスタイル */
-
-  /* 検索結果のタイトル */
-  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:link .sw-Card__titleMain,
-  /* 関連検索 */
-  html[data-darkreader-scheme="dark"] .Unit__listItem a:link,
-  /* カルーセル */
-  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:link,
+  html[data-darkreader-scheme="dark"] .sw-Card__section a:link,
+  html[data-darkreader-scheme="dark"] .sw-Card__titleList a:link,
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:link,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link,
-  /* uBlacklistによって追加されるリンク */
-  html[data-darkreader-scheme="dark"] .ub-button {
-    color: #8ab4f8;
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .sw-Link__siteLinksListItem a:link,
+  html[data-darkreader-scheme="dark"] .Unit__listItem a:link,
+  html[data-darkreader-scheme="dark"] a.Algo__textListLinks:link,
+  html[data-darkreader-scheme="dark"] a.AnswerGourmetListLoco__listTitle:link,
+  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:link .sw-Card__titleMain {
+    color: var(--link-color-dark);
   }
 
-  /* Dark Readerによるダークモードにおける訪問済みリンクのスタイル */
+  html[data-darkreader-scheme="dark"] .ub-button {
+    color: var(--link-color-dark);
+  }
 
-  /* 検索結果のタイトル */
-  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:visited .sw-Card__titleMain,
-  /* 関連検索 */
-  html[data-darkreader-scheme="dark"] .Unit__listItem a:visited,
-  /* カルーセル */
+  html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:visited,
+  html[data-darkreader-scheme="dark"] .sw-Card__section a:visited,
+  html[data-darkreader-scheme="dark"] .sw-Card__titleList a:visited,
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:visited,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited,
-  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle {
-    color: #c58af9;
+  html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited .sw-Carousel__linkTitle,
+  html[data-darkreader-scheme="dark"] .sw-Link__siteLinksListItem a:visited,
+  html[data-darkreader-scheme="dark"] .Unit__listItem a:visited,
+  html[data-darkreader-scheme="dark"] a.Algo__textListLinks:visited,
+  html[data-darkreader-scheme="dark"] a.AnswerGourmetListLoco__listTitle:visited,
+  html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:visited .sw-Card__titleMain {
+    color: var(--visited-link-color-dark);
   }
 }
