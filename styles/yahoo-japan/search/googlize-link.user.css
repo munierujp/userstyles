@@ -4,7 +4,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/
-@version        1.5.0
+@version        1.6.0
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -20,6 +20,7 @@
     --visited-link-color-dark: #c58af9;  /* ダークモードにおける訪問済みリンクの色 */
   }
 
+  .AnswerExploreUniversal__query a:link,
   .sw-Card__columnItem a:link,
   .sw-Card__titleList a:link,
   .sw-Carousel__listItem a:link,
@@ -40,6 +41,7 @@
     text-decoration: none;
   }
 
+  .AnswerExploreUniversal__query a:visited,
   .sw-Card__columnItem a:visited,
   .sw-Card__titleList a:visited,
   .sw-Carousel__listItem a:visited,
@@ -54,6 +56,7 @@
     color: var(--visited-link-color);
   }
 
+  .AnswerExploreUniversal__query a:hover,
   .sw-Card__columnItem a:hover,
   .sw-Card__titleList a:hover,
   .sw-Carousel__listItem a:hover,
@@ -69,6 +72,7 @@
     text-decoration: underline;
   }
 
+  html[data-darkreader-scheme="dark"] .AnswerExploreUniversal__query a:link,
   html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:link,
   html[data-darkreader-scheme="dark"] .sw-Card__titleList a:link,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:link,
@@ -87,6 +91,7 @@
     color: var(--link-color-dark);
   }
 
+  html[data-darkreader-scheme="dark"] .AnswerExploreUniversal__query a:visited,
   html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:visited,
   html[data-darkreader-scheme="dark"] .sw-Card__titleList a:visited,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:visited,
