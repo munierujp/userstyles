@@ -4,7 +4,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/
-@version        1.4.0
+@version        1.5.0
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -21,7 +21,6 @@
   }
 
   .sw-Card__columnItem a:link,
-  .sw-Card__section a:link,
   .sw-Card__titleList a:link,
   .sw-Carousel__listItem a:link,
   .sw-Carousel__listItemLink a:link,
@@ -30,6 +29,7 @@
   .Unit__listItem a:link,
   a.Algo__textListLinks:link,
   a.AnswerGourmetListLoco__listTitle:link,
+  a.AnswerVideoUniversal__listItemLink:link .sw-Card__titleList,
   a.sw-Card__titleInner:link .sw-Card__titleMain {
     color: var(--link-color);
     text-decoration: none;
@@ -41,7 +41,6 @@
   }
 
   .sw-Card__columnItem a:visited,
-  .sw-Card__section a:visited,
   .sw-Card__titleList a:visited,
   .sw-Carousel__listItem a:visited,
   .sw-Carousel__listItemLink a:visited,
@@ -50,12 +49,12 @@
   .Unit__listItem a:visited,
   a.Algo__textListLinks:visited,
   a.AnswerGourmetListLoco__listTitle:visited,
+  a.AnswerVideoUniversal__listItemLink:visited .sw-Card__titleList,
   a.sw-Card__titleInner:visited .sw-Card__titleMain {
     color: var(--visited-link-color);
   }
 
   .sw-Card__columnItem a:hover,
-  .sw-Card__section a:hover,
   .sw-Card__titleList a:hover,
   .sw-Carousel__listItem a:hover,
   .sw-Carousel__listItemLink a:hover,
@@ -64,13 +63,13 @@
   .Unit__listItem a:hover,
   a.Algo__textListLinks:hover,
   a.AnswerGourmetListLoco__listTitle:hover,
+  a.AnswerVideoUniversal__listItemLink:hover .sw-Card__titleList,
   a.sw-Card__titleInner:hover .sw-Card__titleMain,
   .ub-button:hover {
     text-decoration: underline;
   }
 
   html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:link,
-  html[data-darkreader-scheme="dark"] .sw-Card__section a:link,
   html[data-darkreader-scheme="dark"] .sw-Card__titleList a:link,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:link,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:link,
@@ -79,6 +78,7 @@
   html[data-darkreader-scheme="dark"] .Unit__listItem a:link,
   html[data-darkreader-scheme="dark"] a.Algo__textListLinks:link,
   html[data-darkreader-scheme="dark"] a.AnswerGourmetListLoco__listTitle:link,
+  html[data-darkreader-scheme="dark"] a.AnswerVideoUniversal__listItemLink:link .sw-Card__titleList,
   html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:link .sw-Card__titleMain {
     color: var(--link-color-dark);
   }
@@ -88,7 +88,6 @@
   }
 
   html[data-darkreader-scheme="dark"] .sw-Card__columnItem a:visited,
-  html[data-darkreader-scheme="dark"] .sw-Card__section a:visited,
   html[data-darkreader-scheme="dark"] .sw-Card__titleList a:visited,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItem a:visited,
   html[data-darkreader-scheme="dark"] .sw-Carousel__listItemLink a:visited,
@@ -97,6 +96,7 @@
   html[data-darkreader-scheme="dark"] .Unit__listItem a:visited,
   html[data-darkreader-scheme="dark"] a.Algo__textListLinks:visited,
   html[data-darkreader-scheme="dark"] a.AnswerGourmetListLoco__listTitle:visited,
+  html[data-darkreader-scheme="dark"] a.AnswerVideoUniversal__listItemLink:visited .sw-Card__titleList,
   html[data-darkreader-scheme="dark"] a.sw-Card__titleInner:visited .sw-Card__titleMain {
     color: var(--visited-link-color-dark);
   }
