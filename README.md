@@ -1,6 +1,6 @@
 # userstyles
 
-My User Stylesheets
+ユーザースタイルシート
 
 ## DiskStation
 
