@@ -1,3 +1,5 @@
+[![lint](https://github.com/munierujp/userstyles/actions/workflows/lint.yml/badge.svg)](https://github.com/munierujp/userstyles/actions/workflows/lint.yml)
+
 # userstyles
 
 ユーザースタイルシート
