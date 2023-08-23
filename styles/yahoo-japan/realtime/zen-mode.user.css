@@ -16,7 +16,11 @@
   }
   
   .SearchBox_SearchBox__2XNFc {
-    max-width: calc(100vw - 40px);
+    width: calc(100vw - 40px);
+  }
+
+  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
+    width: 100%;
   }
   
   .p .content--990 {
@@ -35,11 +39,6 @@
   /* タブを非表示 */
   #tabs {
     display: none !important;
-  }
-  
-  /* TODO: コメントを書く */
-  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
-    width: 100%;
   }
   
   /* 関連ワードを非表示 */
