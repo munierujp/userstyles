@@ -10,14 +10,17 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://realtime.yahoo.co.jp/realtime/search?") {
+  /* TODO: コメントを書く */
   .p {
     width: 100%;
   }
   
+  /* TODO: コメントを書く */
   .p .header {
     min-width: unset;
   }
   
+  /* TODO: コメントを書く */
   .p .content--990 {
     width: 100%
   }
@@ -27,46 +30,57 @@
     display: none;
   }
   
+  /* TODO: コメントを書く */
   #tabs {
     display: none !important;
   }
   
+  /* TODO: コメントを書く */
   .SearchBox_SearchBox__2XNFc {
     max-width: calc(100vw - 40px);
   }
   
+  /* TODO: コメントを書く */
   .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
     width: 100%;
   }
   
+  /* TODO: コメントを書く */
   .RelatedBuzz_fixedHeight__9jFSX {
     display: none;
   }
   
+  /* TODO: コメントを書く */
   .SearchBox_qt__YRNlr {
     display: none;
   }
  
+  /* TODO: コメントを書く */
   #contentsBody {
     width: 100%;
   }
   
+  /* TODO: コメントを書く */
   .p .main {
     width: 100%;
   }
   
+  /* TODO: コメントを書く */
   .MainYda_MainYda__tLJh2 {
     display: none;
   }
   
+  /* TODO: コメントを書く */
   .p .sub {
     display: none;
   }
   
+  /* TODO: コメントを書く */
   #totop {
     display: none;
   }
   
+  /* TODO: コメントを書く */
   #appprfr {
     display: none;
   }
