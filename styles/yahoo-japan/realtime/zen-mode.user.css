@@ -10,9 +10,13 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://realtime.yahoo.co.jp/realtime/search?") {
-  /* メインの表示領域をウインドウの横幅に合わせる */
+  /* 表示をウインドウの横幅に合わせる */
   .p {
     width: 100%;
+  }
+  
+  .SearchBox_SearchBox__2XNFc {
+    max-width: calc(100vw - 40px);
   }
   
   .p .content--990 {
@@ -31,11 +35,6 @@
   /* タブを非表示 */
   #tabs {
     display: none !important;
-  }
-  
-  /* TODO: コメントを書く */
-  .SearchBox_SearchBox__2XNFc {
-    max-width: calc(100vw - 40px);
   }
   
   /* TODO: コメントを書く */
