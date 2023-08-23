@@ -10,19 +10,17 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://realtime.yahoo.co.jp/realtime/search?") {
-  /* TODO: コメントを書く */
+  /* メインの表示領域をウインドウの横幅に合わせる */
   .p {
     width: 100%;
   }
   
-  /* TODO: コメントを書く */
-  .p .header {
-    min-width: unset;
-  }
-  
-  /* TODO: コメントを書く */
   .p .content--990 {
     width: 100%
+  }
+  
+  .p .main {
+    width: 100%;
   }
   
   /* ヘッダーを非表示 */
@@ -54,18 +52,8 @@
   .SearchBox_qt__YRNlr {
     display: none;
   }
- 
-  /* TODO: コメントを書く */
-  #contentsBody {
-    width: 100%;
-  }
   
-  /* TODO: コメントを書く */
-  .p .main {
-    width: 100%;
-  }
-  
-  /* 右カラムを非表示 */
+  /* サブを非表示 */
   .p .sub {
     display: none;
   }
