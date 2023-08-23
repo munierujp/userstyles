@@ -30,7 +30,7 @@
     display: none;
   }
   
-  /* TODO: コメントを書く */
+  /* タブを非表示 */
   #tabs {
     display: none !important;
   }
@@ -75,12 +75,12 @@
     display: none;
   }
   
-  /* TODO: コメントを書く */
+  /* トップに移動するボタンを非表示 */
   #totop {
     display: none;
   }
   
-  /* TODO: コメントを書く */
+  /* アプリのバナーを非表示 */
   #appprfr {
     display: none;
   }
