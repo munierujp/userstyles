@@ -1,0 +1,73 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-id-pattern */
+
+/* ==UserStyle==
+@name           Zen Mode
+@namespace      https://github.com/munierujp/
+@version        0.1.0
+@description    Yahoo!リアルタイム検索の表示をシンプルにします。
+@author         Munieru (https://github.com/munierujp/)
+==/UserStyle== */
+
+@-moz-document url-prefix("https://realtime.yahoo.co.jp/realtime/search?") {
+  /* 表示をウインドウの横幅に合わせる */
+  .p {
+    width: 100%;
+  }
+  
+  .SearchBox_SearchBox__2XNFc {
+    width: calc(100vw - 40px);
+  }
+
+  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
+    width: 100%;
+  }
+  
+  .p .content--990 {
+    width: 100%
+  }
+  
+  .p .main {
+    width: 100%;
+  }
+  
+  /* ヘッダーを非表示 */
+  #header {
+    display: none;
+  }
+  
+  /* タブを非表示 */
+  #tabs {
+    display: none !important;
+  }
+  
+  /* 関連ワードを非表示 */
+  .RelatedBuzz_fixedHeight__9jFSX {
+    display: none;
+  }
+  
+  /* ミュートしたアカウントのリンクを非表示 */
+  .SearchBox_qt__YRNlr {
+    display: none;
+  }
+  
+  /* サブを非表示 */
+  .p .sub {
+    display: none;
+  }
+  
+  /* トップに移動するボタンを非表示 */
+  #totop {
+    display: none;
+  }
+  
+  /* アプリのバナーを非表示 */
+  #appprfr {
+    display: none;
+  }
+  
+  /* フッターを非表示 */
+  #footer {
+    display: none;
+  }
+}
