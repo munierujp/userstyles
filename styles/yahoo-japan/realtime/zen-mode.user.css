@@ -1,0 +1,94 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-id-pattern */
+
+/* ==UserStyle==
+@name           Zen Mode
+@namespace      https://github.com/munierujp/
+@version        0.1.0
+@description    検索結果の表示をシンプルにします。
+@author         Munieru (https://github.com/munierujp/)
+==/UserStyle== */
+
+@-moz-document url-prefix("https://realtime.yahoo.co.jp/realtime/search?") {
+  .p {
+    width: 100%;
+  }
+  
+  .p .header {
+    min-width: unset;
+  }
+  
+  .p .content--990 {
+    width: 100%
+  }
+  
+  #header {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  #tabs {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .SearchBox_SearchBox__2XNFc {
+    max-width: calc(100vw - 40px);
+  }
+  
+  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
+    width: 100%;
+  }
+  
+  .RelatedBuzz_fixedHeight__9jFSX {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .SearchBox_qt__YRNlr {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+ 
+  #contentsBody {
+    width: 100%;
+  }
+  
+  .p .main {
+    width: 100%;
+  }
+  
+  .MainYda_MainYda__tLJh2 {
+    display: none;
+    width: 0;
+    height: 0;    
+  }
+  
+  .p .sub {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  #totop {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  #appprfr {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  #footer {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
