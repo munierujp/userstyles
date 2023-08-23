@@ -22,6 +22,7 @@
     width: 100%
   }
   
+  /* ヘッダーを非表示 */
   #header {
     display: none;
     width: 0;
@@ -86,6 +87,7 @@
     height: 0;
   }
   
+  /* フッターを非表示 */
   #footer {
     display: none;
     width: 0;
