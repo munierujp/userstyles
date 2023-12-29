@@ -35,7 +35,7 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
   }
   
   /* ヘッダーを非表示 */
-  #header {
+  .mhd {
     display: none;
   }
   
