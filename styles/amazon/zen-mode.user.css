@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Zen Mode
+@namespace      https://github.com/munierujp/
+@version        0.1.0
+@description    Amazonの表示をシンプルにします。
+@author         Munieru (https://github.com/munierujp/)
+@homepageURL https://github.com/munierujp/userstyles
+@updateURL   https://github.com/munierujp/userstyles/raw/master/styles/amazon/zen-mode.user.css
+@supportURL https://github.com/munierujp/userstyles/issues
+==/UserStyle== */
+
+@-moz-document domain("www.amazon.co.jp") {
+  /* ヘッダーのお届け先を非表示 */
+  #nav-global-location-slot {
+    display: none !important;
+  }
+}
