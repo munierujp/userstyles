@@ -21,9 +21,18 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
   .SearchBox_SearchBox__2XNFc {
     width: calc(100vw - 40px);
   }
+  
+  .SearchBox_SearchBox__2XNFc::after {
+    width: 100vw;
+    margin-left: 0;
+  }
 
   .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
     width: 100%;
+  }
+  
+  .p .header {
+    min-width: unset;
   }
   
   .p .content--990 {
@@ -34,7 +43,7 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
     width: 100%;
   }
   
-  /* ヘッダーを非表示 */
+  /* ヘッダーを非表示 */  
   .mhd {
     display: none;
   }
