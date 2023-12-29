@@ -4,6 +4,10 @@
 
 ユーザースタイルシート
 
+## Amazon
+
+- [Zen Mode](https://github.com/munierujp/userstyles/raw/master/styles/amazon/zen-mode.user.css)
+
 ## DiskStation
 ### Video Station
 
@@ -14,7 +18,6 @@
 ### Yahoo!リアルタイム検索
 
 - [Zen Mode](https://github.com/munierujp/userstyles/raw/master/styles/yahoo-japan/realtime/zen-mode.user.css)
-
 
 ### Yahoo!検索
 
