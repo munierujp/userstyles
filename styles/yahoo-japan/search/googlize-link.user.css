@@ -12,10 +12,17 @@
 /* stylelint-disable selector-class-pattern */
 @-moz-document url-prefix("https://search.yahoo.co.jp/search?") {
   :root {
-    --link-color: #1a0dab;  /* 通常のリンクの色 */
-    --link-color-dark: #8ab4f8;  /* ダークモードにおける通常のリンクの色 */
-    --visited-link-color: #681da8;  /* 訪問済みリンクの色 */
-    --visited-link-color-dark: #c58af9;  /* ダークモードにおける訪問済みリンクの色 */
+    /* 通常のリンクの色 */
+    --link-color: #1a0dab;
+
+    /* ダークモードにおける通常のリンクの色 */
+    --link-color-dark: #8ab4f8;
+
+    /* 訪問済みリンクの色 */
+    --visited-link-color: #681da8;
+
+    /* ダークモードにおける訪問済みリンクの色 */
+    --visited-link-color-dark: #c58af9;
   }
 
   .AnswerExploreUniversal__query a:link,
