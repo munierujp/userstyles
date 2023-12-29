@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           リンクの下線を非表示
-@namespace      https://github.com/munierujp/
-@version        1.1.1
+@namespace      https://github.com/munierujp/userstyles/tree/master/styles/yahoo-japan/realtime
+@version        1.1.2
 @description    Yahoo!検索のリンクの下線を非表示にします。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -9,7 +9,7 @@
 @supportURL https://github.com/munierujp/userstyles/issues
 ==/UserStyle== */
 
-@-moz-document domain("search.yahoo.co.jp") {
+@-moz-document url-prefix("https://search.yahoo.co.jp/search?") {
   a {
     text-decoration: none;
   }
