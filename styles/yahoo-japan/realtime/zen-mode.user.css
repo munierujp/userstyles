@@ -23,8 +23,8 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
   }
   
   .SearchBox_SearchBox__2XNFc::after {
-    width: 100vw;
     margin-left: 0;
+    width: 100vw;
   }
 
   .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 .SearchBox_fixedBody__tM44Z {
