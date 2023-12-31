@@ -53,6 +53,11 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
     display: none !important;
   }
   
+  /* 検索ボックスの固定を解除 */
+  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 {
+    position: unset;
+  }
+  
   /* 関連ワードを非表示 */
   .RelatedBuzz_fixedHeight__9jFSX {
     display: none;
