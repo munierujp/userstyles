@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zen Mode
 @namespace      https://github.com/munierujp/userstyles/tree/master/styles/yahoo-japan/realtime
-@version        0.4.0
+@version        0.5.0
 @description    Yahoo!リアルタイム検索の表示をシンプルにします。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -51,6 +51,11 @@ url-prefix("https://search.yahoo.co.jp/realtime/search?") {
   /* タブを非表示 */
   #tabs {
     display: none !important;
+  }
+  
+  /* 検索ボックスの固定を解除 */
+  .SearchBox_fixedWrap__h9X4V.SearchBox_fixed__XnfK2 {
+    position: unset;
   }
   
   /* 関連ワードを非表示 */
