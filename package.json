@@ -2,6 +2,7 @@
   "name": "userstyles",
   "version": "1.0.0",
   "description": "My User Stylesheets",
+  "type": "module",
   "private": true,
   "scripts": {
     "lint": "stylelint '**/*.css'"
