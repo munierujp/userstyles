@@ -14,6 +14,10 @@
 - [ドロップダウンメニューをスクロール可能化](https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/scrollable-dropdown-menu.user.css)
 - [サムネイルを拡大](https://github.com/munierujp/userstyles/raw/master/styles/disk-station/video-station/wide-thumbnail.user.css)
 
+## Wikipedia
+
+- [太字をより太く](https://github.com/munierujp/userstyles/raw/master/styles/wikipedia/bolder-bold.user.css)
+
 ## X
 
 - [Zen Mode](https://github.com/munierujp/userstyles/raw/master/styles/x/zen-mode.user.css)
