@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           太字をより太く
 @namespace      https://github.com/munierujp/userstyles/tree/master/styles/wikipedia
-@version        0.1.0
+@version        0.1.1
 @description    Wikipediaの太字をより太くします。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -10,7 +10,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org") {
-  /* stylelint-disable-next-line selector-id-pattern */
   #bodyContent b {
     font-weight: 1000;
   }

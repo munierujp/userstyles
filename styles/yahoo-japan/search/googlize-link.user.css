@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           リンクのスタイルをGoogle化
 @namespace      https://github.com/munierujp/userstyles/tree/master/styles/yahoo-japan/search
-@version        1.6.1
+@version        1.6.2
 @description    Yahoo!検索のリンクのスタイルをGoogleっぽくします。Dark ReaderによるダークモードやuBlacklistによって追加されるリンクにも対応しています。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
@@ -9,7 +9,6 @@
 @supportURL https://github.com/munierujp/userstyles/issues
 ==/UserStyle== */
 
-/* stylelint-disable selector-class-pattern */
 @-moz-document url-prefix("https://search.yahoo.co.jp/search?") {
   :root {
     /* 通常のリンクの色 */
