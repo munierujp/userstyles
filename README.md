@@ -31,3 +31,7 @@
 
 - [リンクのスタイルをGoogle化](https://github.com/munierujp/userstyles/raw/master/styles/yahoo-japan/search/googlize-link.user.css)
 - [リンクの下線を非表示](https://github.com/munierujp/userstyles/raw/master/styles/yahoo-japan/search/hide-link-underline.user.css)
+
+## コトバンク
+
+- [広告を非表示](https://github.com/munierujp/userstyles/raw/master/styles/kotobank/hide-ads.user.css)
