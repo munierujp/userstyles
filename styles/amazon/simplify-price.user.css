@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           価格表示を簡略化
+@namespace      https://github.com/munierujp/userstyles/tree/master/styles/amazon
+@version        0.1.0
+@description    Amazonの価格表示を簡略化します。
+@author         Munieru (https://github.com/munierujp/)
+@homepageURL https://github.com/munierujp/userstyles
+@updateURL   https://github.com/munierujp/userstyles/raw/master/styles/amazon/simplify-price.user.css
+@supportURL https://github.com/munierujp/userstyles/issues
+==/UserStyle== */
+
+@-moz-document domain("www.amazon.co.jp") {
+  /* Kindleの商品ページに「ポイントを利用する」「ご請求額」がある場合に「Kindle 価格」のスタイルを「ポイントを利用する」「ご請求額」が無いときのスタイルに変更 */
+  body:has(#kindle-price):has(#availableBalance):has(#youPaySection) .kindlePriceLabel {
+    font-size: unset !important;
+    line-height: unset !important;
+  }
+  
+  /* Kindleの商品ページに「ポイントを利用する」「ご請求額」がある場合に「Kindle 価格」のスタイルを「ポイントを利用する」「ご請求額」が無いときのスタイルに変更 */
+  body:has(#kindle-price):has(#availableBalance):has(#youPaySection) #kindle-price {
+    /* .a-size-large の font-size */
+    font-size: 24px !important;
+
+    /* .a-size-large の line-height */
+    line-height: 32px !important;
+
+    /* .a-color-price の color */
+    color: #b12704 !important;
+
+    /* .a-text-bold の font-weight */
+    font-weight: 700 !important;
+  }
+
+  /* Kindleの商品ページに「ポイントを利用する」「ご請求額」がある場合に「ポイントを利用する」を非表示 */
+  body:has(#kindle-price):has(#availableBalance):has(#youPaySection) tr:has(#availableBalance) {
+    display: none !important;
+  }
+  
+  /* Kindleの商品ページに「ポイントを利用する」「ご請求額」がある場合に「ご請求額」を非表示 */
+  body:has(#kindle-price):has(#availableBalance):has(#youPaySection) tr:has(#youPaySection) {
+    display: none !important;
+  }  
+}

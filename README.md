@@ -6,6 +6,7 @@
 
 ## Amazon
 
+- [価格表示を簡略化](https://github.com/munierujp/userstyles/raw/master/styles/amazon/simplify-price.user.css)
 - [Zen Mode](https://github.com/munierujp/userstyles/raw/master/styles/amazon/zen-mode.user.css)
 
 ## DiskStation
