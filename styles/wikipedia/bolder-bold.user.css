@@ -9,6 +9,7 @@
 @supportURL https://github.com/munierujp/userstyles/issues
 ==/UserStyle== */
 
+/* stylelint-disable-next-line at-rule-no-vendor-prefix */
 @-moz-document domain("wikipedia.org") {
   #bodyContent b {
     font-weight: 1000;
