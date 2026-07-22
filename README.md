@@ -4,6 +4,10 @@
 
 ユーザースタイルシート
 
+## すべて
+
+- [text-autospace: normal](https://github.com/munierujp/userstyles/raw/master/styles/all/text-autospace-normal.user.css)
+
 ## Amazon
 
 - [価格表示を簡略化](https://github.com/munierujp/userstyles/raw/master/styles/amazon/simplify-price.user.css)
