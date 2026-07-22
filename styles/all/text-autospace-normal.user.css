@@ -2,7 +2,7 @@
 @name           text-autospace-normal
 @namespace      https://github.com/munierujp/userstyles/tree/master/styles/all
 @version        0.1.0
-@description    body要素にtext-autospace: normalを適用します。
+@description    body要素にtext-autospace:normalを適用します。
 @author         Munieru (https://github.com/munierujp/)
 @homepageURL https://github.com/munierujp/userstyles
 @updateURL   https://github.com/munierujp/userstyles/raw/master/styles/all/text-autospace-normal.user.css
@@ -11,6 +11,6 @@
 
 @-moz-document regexp(".*") {
   body {
-    text-autospace: normal;
+    text-autospace:normal;
   }
 }
